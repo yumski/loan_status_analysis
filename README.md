@@ -53,8 +53,8 @@ The limitation of XGBoost models is the interpretability of the features. Unlike
 
 #### Model Results:
 
-- Trained model with 0.80 training ROC-AUC and 0.78 testing ROC-AUC scores.
-- Feature Ranking based on information gained: 'Term', 'ProsperRating_NC', 'ProsperRating_B', 'ProsperRating_E', 'BorrowerAPR', IncomeVerifiable_True', 'ProsperRating_HR', 'ProsperRating_C', 'ProsperRating_A', 'LoanOriginalAmount', 'ProsperRating_D', 'StatedMonthlyIncome', 'OpenCreditLines', 'DebtToIncomeRatio'.
+- Model resulted in an accuracy score of 0.98, an AUC-ROC score of 0.944, a precision of 0.89, a recall of 0.99, and an f1 score of 0.94.
+- The top features are principal customer payments, loan month since origination, original loan amount, estimated return, and monthly payments when ranked by gains.
 
 ## Discrepancies
 
@@ -66,4 +66,4 @@ The limitation of XGBoost models is the interpretability of the features. Unlike
 
 ## Next Steps
 
-It is important to note that due to both time and hardware constraints, I only selected nine features to perform exploratory data analysis and modeling. XGBoost is designed to be utilized with a large number of features to take full advantage of its boosting and regularization properties. I will keep updating this analysis to include more features in the future. I believe that using all 81 features in this dataset will result in a much more accurate model.
+It is important to note that due to both time and hardware constraints, I used RandomizedSearchCV for hyperparameter tuning. Setting more detailed hyper parameters in conjuction with GridSearchCV will result in a better tuned model. My next step is to further tune this model with PySpark.
