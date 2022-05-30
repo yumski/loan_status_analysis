@@ -68,4 +68,4 @@ The limitation of XGBoost models is the interpretability of the features. Unlike
 
 ## Next Steps
 
-It is important to note that due to both time and hardware constraints, I used RandomizedSearchCV for hyperparameter tuning. Setting more detailed hyper parameters in conjuction with GridSearchCV will result in a better tuned model. My next step is to further tune this model with PySpark.
+It is important to note that due to both time and hardware constraints, I used RandomizedSearchCV for hyperparameter tuning. Setting more detailed hyper parameters in conjuction with GridSearchCV will result in a better tuned model. My next step is to further tune this model with PySpark; as well as perform EDA on all 81 features.
